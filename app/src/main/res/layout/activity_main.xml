@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/act_main_rl"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"
+        android:id="@+id/act_main_fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.ruihua.geshuibao.CustomWidget.MyRadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/bottom_bar_home"
+            android:textColor="@drawable/rb_textcolor_select"
+            android:textSize="10sp"
+            app:drawableSize="23dp"
+            app:drawableTop="@drawable/rb_home" />
+
+        <com.ruihua.geshuibao.CustomWidget.MyRadioButton
+            android:id="@+id/rb_consult"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="0dp"
+            android:paddingTop="5dp"
+            android:text="@string/bottom_bar_consult"
+            android:textColor="@drawable/rb_textcolor_select"
+            android:textSize="10sp"
+            app:drawableSize="23dp"
+            app:drawableTop="@drawable/rb_consult" />
+        <!--占位视图 申报 位-->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+             />
+        <com.ruihua.geshuibao.CustomWidget.MyRadioButton
+            android:id="@+id/rb_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/bottom_bar_news"
+            android:textColor="@drawable/rb_textcolor_select"
+            android:textSize="10sp"
+            app:drawableSize="23dp"
+            app:drawableTop="@drawable/rb_news" />
+
+        <com.ruihua.geshuibao.CustomWidget.MyRadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/bottom_bar_mine"
+            android:textColor="@drawable/rb_textcolor_select"
+            android:textSize="10sp"
+            app:drawableSize="23dp"
+            app:drawableTop="@drawable/rb_mine" />
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/mian_ll_declare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="3dp"
+        >
+        <ImageView
+            android:id="@+id/iv_declare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/rb_declare"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/tv_declare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottom_bar_declare"
+            android:textSize="10sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

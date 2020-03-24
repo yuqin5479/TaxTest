@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+    <!--政策法规-->
+    <include
+        android:id="@+id/in_head_setup"
+        layout="@layout/head_title" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_policies_egulations_title"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/text_color_blue"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_color_blue"
+        app:tabTextColor="@color/text_gray"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_policies_egulations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp" />
+</LinearLayout>

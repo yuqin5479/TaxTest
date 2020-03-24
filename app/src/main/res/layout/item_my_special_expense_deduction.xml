@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    >
+    <!--我的申报  专项附加扣除  item-->
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/d_deduction_1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/tv_deducion_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="子女教育"
+        android:textSize="16sp"
+        android:textColor="@color/main_text_color"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥200"
+        android:layout_marginRight="30dp"
+        android:textSize="14sp"
+        android:textColor="@color/gray_text_zqsb"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

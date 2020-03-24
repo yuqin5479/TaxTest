@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/head_title" />
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/msg_proficy_srl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <ListView
+        android:id="@+id/msg_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#0000"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_height="45dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_search_white"
+            android:hint="输入消息内容"
+            android:maxLines="2"/>
+        <Button
+            android:id="@+id/send"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:text="发送"/>
+    </LinearLayout>
+
+</LinearLayout>

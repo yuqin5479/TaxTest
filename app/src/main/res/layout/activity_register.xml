@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_head_register"
+        layout="@layout/head_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp"
+                tools:text="手机号:" />
+
+            <com.ruihua.geshuibao.CustomWidget.ClearEditText
+                android:id="@+id/et_phone_regist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textColorHint="#999999"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#afafaf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_strverification_rejest"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="验证码:"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp" />
+
+            <com.ruihua.geshuibao.CustomWidget.ClearEditText
+                android:id="@+id/et_verification_rejest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="2"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:textColorHint="#999999"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_getverification_rejecst"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="#00a3eb"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#afafaf" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_strpassword_regist"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="密     码:"
+                android:textColor="@color/text_gray"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/image_isshow_regist"
+                android:layout_width="36dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/deye_hui" />
+
+            <com.ruihua.geshuibao.CustomWidget.ClearEditText
+                android:id="@+id/et_password_regist"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/image_isshow_login"
+                android:layout_toRightOf="@+id/tv_strpassword_regist"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHint="#999999"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#afafaf" />
+    </LinearLayout>
+    <!--login_click_login_gray    roundrect_blue   -->
+    <TextView
+        android:id="@+id/tv_rejistnow_rejist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lila_register"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/roundrect_blue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white1"
+        android:textSize="18sp"
+        tools:text="立即注册" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_ismember_rejist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_rejistnow_rejist"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        tools:text="已有账号,直接登入" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册即代表您已经同意"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/act_register_privacy_policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《瑞华个税宝服务协议》"
+            android:textColor="#00a3eb"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+</LinearLayout>

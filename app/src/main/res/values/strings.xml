@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">个税宝</string>
+
+    <string name="exit_msg">再按一次退出程序</string>
+    <!--首页 界面 -->
+    <string name="home_revenue_msg">税务局消息</string>
+    <string name="home_company_msg">单位消息</string>
+    <string name="home_terrace_msg">系统消息</string>
+    <string name="home_msg_more">更多</string>
+    <string name="home_individual_income_tax_query">查  询</string>
+    <string name="home_declare_record">申报记录</string>
+    <string name="home_policies_regulations">政策法规</string>
+
+    <!--主界面 底部菜单-->
+    <string name="bottom_bar_home">首页</string>
+    <string name="bottom_bar_consult">咨询</string>
+    <string name="bottom_bar_declare">上传申报</string>
+    <string name="bottom_bar_news">新闻资讯</string>
+    <string name="bottom_bar_mine">我的</string>
+
+    <!--首页 申报 弹窗popup  Item文本-->
+    <string name="home_popup_item1">月度专项附加扣除及其他扣除上传</string>
+    <string name="home_popup_item2">月度其他扣除上传</string>
+    <string name="home_popup_item3">月度个人所得税自行申报</string>
+    <string name="home_popup_item4">年度自行纳税申报</string>
+    <string name="home_popup_item5">年度综合所得汇算清缴</string>
+    <!--我的-->
+    <string name="mine_personal_information">个人信息</string>
+    <string name="mine_not_approve">未完善</string>
+    <string name="mine_yet_approve">已完善</string>
+    <string name="mine_join_company">加入单位</string>
+    <string name="mine_my_company">我的单位</string>
+    <string name="mine_my_collect">我的收藏</string>
+    <string name="mine_my_individual">我的个税</string>
+    <string name="mine_my_declare">我的申报</string>
+    <string name="mine_consult_record">咨询记录</string>
+    <string name="mine_set">设置</string>
+    <!--个人信息 界面-->
+    <string name="personal_information_save">保存</string>
+    <string name="personal_information_img">头像</string>
+    <string name="personal_information_user_name">姓名</string>
+    <string name="personal_information_tel">手机号</string>
+    <string name="personal_information_id">居民身份证号</string>
+    <string name="personal_information_sex">性别</string>
+    <string name="personal_information_birthday">出生日期</string>
+    <string name="personal_information_ns_id">纳税人识别号</string>
+    <!--已取消的功能数据-->
+    <string name="personal_information_is_disability">是否残疾</string>
+    <string name="personal_information_disability_id">残疾人证号</string>
+    <string name="personal_information_is_martyred">是否烈属</string>
+    <string name="personal_information_martyred_id">烈属证号</string>
+    <string name="personal_information_is_old_people">是否孤老</string>
+
+    <!--咨询 （联系客服）界面-->
+    <string name="consult_title">联系客服</string>
+    <string name="consult_self_service">自助问答</string>
+    <string name="consult_self_service_text">瑞华个税宝 提供一些热门问题的整理归纳，为您提供专业的服务。</string>
+    <string name="consult_contact_company">联系单位</string>
+    <string name="consult_contact_company_text">瑞华个税宝 在线 为您解答常见问题，客服耐心专业，响应迅速。</string>
+    <string name="consult_cpoa">平台客服</string>
+    <string name="consult_cpoa_text">瑞华个税宝 在线 服务时间9：00-18:30。</string>
+    <!--设置  界面-->
+    <string name="setup_safety">账号与安全</string>
+    <string name="setup_new_msg">新消息提醒</string>
+    <string name="setup_wipe_cache">清除缓存</string>
+    <string name="setup_about_us">关于我们</string>
+    <string name="setup_feedback">意见反馈</string>
+    <string name="setup_log_out">退出登录</string>
+    <!--加入单位  界面-->
+    <string name="company_authentication">单位认证</string>
+    <string name="scan_join_company">扫一扫加入单位</string>
+    <string name="search_join_company">查询加入单位</string>
+    <string name="applyfor_create_company">申请创建单位</string>
+    <string name="companyinfo_company_name">单位名称</string>
+    <string name="companyinfo_legal_representative">法定代表人</string>
+    <string name="companyinfo_company_qrcode">单位二维码</string>
+    <string name="companyinfo_join_company">加入单位</string>
+    <string name="companyinfo_labor_contract_company">劳动合同单位</string>
+    <string name="companyinfo_salaried_company">授薪单位</string>
+    <!--月度专项附加扣除-->
+    <string name="special_expense_deduction">月度专项附加扣除及其他扣除</string>
+    <string name="special_expense_deduction_upload">上传</string>
+    <string name="special_expense_deduction_data">时间</string>
+    <string name="special_expense_deduction_notes">备注</string>
+    <string name="special_expense_deduction_employers">受雇单位</string>
+    <string name="special_expense_deduction_upload_accessory">上传附件</string>
+    <string name="special_expense_deduction_title_hint">没有填写的数据，默认上传金额为0元\n当月数据上传截止日期为当月最后一天24点</string>
+    <string name="special_expense_deduction_hint2">子女教育规定上限金额为200元/每月，超出按照最高200元上传数据</string>
+
+    <!--商业健康保险  特殊类型-->
+    <string name="tax_recognition_code">税优识别码</string>
+    <string name="date_of_policy">保单生效日期</string>
+    <string name="annual_premium">年度保费</string>
+    <string name="monthly_premium">月度保费</string>
+    <string name="amount_deducted_from_this_period">本期扣除金额</string>
+</resources>

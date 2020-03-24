@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="手机号码"
+            android:textColor="@color/black_text"
+            android:textSize="16sp" />
+
+        <com.ruihua.geshuibao.CustomWidget.ClearEditText
+            android:id="@+id/et_sms_login_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:background="@null"
+            android:hint="手机号"
+            android:inputType="number"
+            android:maxLength="32"
+            android:maxLines="1"
+            android:textColorHint="@color/gray_light"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="手机验证码"
+            android:textColor="@color/black_text"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.ruihua.geshuibao.CustomWidget.ClearEditText
+                android:id="@+id/et_sms_login_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="32"
+                android:maxLines="1"
+                android:paddingRight="15dp"
+                android:textColorHint="@color/gray_light"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_phoneCode_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/login_btn_background"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d9d9d9"
+        android:orientation="vertical" />
+
+
+    <TextView
+        android:id="@+id/tv_sms_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_click_login_gray"
+        android:gravity="center"
+        android:text="登 录"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

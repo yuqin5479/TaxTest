@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ms_square.etsyblur.BlurringView
+        android:id="@id/blurring_view"
+        android:layout_width="match_parent"
+        app:radius="17"
+        app:overlayColor="#66eeeeee"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_ietm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="50dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/d_frame_6"
+            android:text="@string/home_popup_item1"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!--<TextView-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/tv_ietm2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:drawableLeft="@mipmap/d_frame_2"-->
+            <!--android:text="@string/home_popup_item2"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="15sp" />-->
+
+        <TextView
+            android:id="@+id/tv_ietm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/d_frame_3"
+            android:text="@string/home_popup_item3"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_ietm4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/d_frame_4"
+            android:text="@string/home_popup_item4"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_ietm5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@mipmap/d_frame_5"
+            android:text="@string/home_popup_item5"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_light"
+        android:layout_alignTop="@+id/rel_close"
+        />
+    <RelativeLayout
+        android:id="@+id/rel_close"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="15dp"
+            android:src="@mipmap/ic_more_close" />
+    </RelativeLayout>
+
+</RelativeLayout>

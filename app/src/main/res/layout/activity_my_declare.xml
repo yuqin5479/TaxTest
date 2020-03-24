@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/in_head_setup"
+        layout="@layout/head_title" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/my_declare_tab_title"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/text_color_blue"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/text_color_blue"
+        app:tabTextColor="@color/text_gray"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/my_declare_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018年10月"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:drawableRight="@mipmap/com_arrow"
+        android:drawablePadding="5dp"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_declare_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp" />
+
+
+</LinearLayout>

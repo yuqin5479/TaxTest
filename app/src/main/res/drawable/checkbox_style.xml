@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+ <!--<item-->
+    <!--android:drawable="@drawable/mine_ridio_on"-->
+    <!--android:state_checked="true"/>-->
+<!--<item-->
+    <!--android:drawable="@drawable/mine_ridio_off"-->
+    <!--android:state_checked="false"/>-->
+<!--<item-->
+    <!--android:drawable="@drawable/mine_ridio_off"/>-->
+ <item
+     android:drawable="@drawable/declare_radio_on"
+     android:state_checked="true"/>
+ <item
+     android:drawable="@drawable/declare_radio_off"
+     android:state_checked="false"/>
+ <item
+     android:drawable="@drawable/declare_radio_off"/>
+</selector>
